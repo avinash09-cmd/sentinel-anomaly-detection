@@ -1,0 +1,1052 @@
+[
+  {
+    "event_id": "evt_00011117",
+    "entity_id": "user_0083",
+    "entity_type": "user",
+    "timestamp": "2026-07-07 13:32:00.333658",
+    "risk_score": 17.674,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0225,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6658,
+        "raw_value": 0.098,
+        "direction": "increased"
+      },
+      {
+        "feature": "hour_deviation_z",
+        "reason": "unusual login hour for this entity",
+        "shap_contribution": 0.3043,
+        "raw_value": 0.306,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-07 13:31:37.768706",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:50.755645",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:52.628643",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:53.006053",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:00.333658",
+        "resource_accessed": "vpn_gateway",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + unusual login hour for this entity."
+  },
+  {
+    "event_id": "evt_00011115",
+    "entity_id": "user_0083",
+    "entity_type": "user",
+    "timestamp": "2026-07-07 13:31:53.006053",
+    "risk_score": 17.124,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0139,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6584,
+        "raw_value": 0.135,
+        "direction": "increased"
+      },
+      {
+        "feature": "hour_deviation_z",
+        "reason": "unusual login hour for this entity",
+        "shap_contribution": 0.3006,
+        "raw_value": 0.305,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-07 13:31:24.187413",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:37.768706",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:50.755645",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:52.628643",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:53.006053",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + unusual login hour for this entity."
+  },
+  {
+    "event_id": "evt_00016445",
+    "entity_id": "service_account_0088",
+    "entity_type": "service_account",
+    "timestamp": "2026-07-24 22:58:20.127991",
+    "risk_score": 16.6162,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.7109,
+        "raw_value": 8.573,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6257,
+        "raw_value": 0.132,
+        "direction": "increased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": -0.4783,
+        "raw_value": -0.898,
+        "direction": "decreased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-24 22:58:14.119017",
+        "resource_accessed": "ci_cd_pipeline",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:17.063331",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:19.382885",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.055235",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.127991",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + session duration far from this entity's norm."
+  },
+  {
+    "event_id": "evt_00016446",
+    "entity_id": "service_account_0088",
+    "entity_type": "service_account",
+    "timestamp": "2026-07-24 22:59:12.585896",
+    "risk_score": 16.6085,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.6517,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": -0.8668,
+        "raw_value": 0.003,
+        "direction": "decreased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": -0.4891,
+        "raw_value": -0.876,
+        "direction": "decreased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-24 22:58:17.063331",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:19.382885",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.055235",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.127991",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:59:12.585896",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + session duration far from this entity's norm."
+  },
+  {
+    "event_id": "evt_00011122",
+    "entity_id": "user_0083",
+    "entity_type": "user",
+    "timestamp": "2026-07-07 13:32:47.343412",
+    "risk_score": 16.4057,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0257,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6287,
+        "raw_value": 0.087,
+        "direction": "increased"
+      },
+      {
+        "feature": "hour_deviation_z",
+        "reason": "unusual login hour for this entity",
+        "shap_contribution": 0.3008,
+        "raw_value": 0.291,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-07 13:31:52.628643",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:53.006053",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:00.333658",
+        "resource_accessed": "vpn_gateway",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:18.756472",
+        "resource_accessed": "crm",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "success"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:47.343412",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + unusual login hour for this entity."
+  },
+  {
+    "event_id": "evt_00011125",
+    "entity_id": "user_0083",
+    "entity_type": "user",
+    "timestamp": "2026-07-07 13:32:18.756472",
+    "risk_score": 16.3945,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.2039,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": -2.6417,
+        "raw_value": 0.238,
+        "direction": "decreased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6357,
+        "raw_value": 0.046,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-07 13:31:50.755645",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:52.628643",
+        "resource_accessed": "code_repo",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:31:53.006053",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:00.333658",
+        "resource_accessed": "vpn_gateway",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-07 13:32:18.756472",
+        "resource_accessed": "crm",
+        "geo_city": "Sydney",
+        "device_fingerprint": "fp_6ff6fac58b82",
+        "auth_result": "success"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + session duration far from this entity's norm + isolation-forest outlier score (feature-space deviation)."
+  },
+  {
+    "event_id": "evt_00005878",
+    "entity_id": "user_0062",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 15:03:55.622161",
+    "risk_score": 15.9992,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0234,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.65,
+        "raw_value": 0.124,
+        "direction": "increased"
+      },
+      {
+        "feature": "resource_novelty",
+        "reason": "access to a resource this entity rarely/never uses",
+        "shap_contribution": 0.2466,
+        "raw_value": 0.279,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-20 15:03:47.908044",
+        "resource_accessed": "hr_portal",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:48.524590",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:49.578928",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:52.167418",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:55.622161",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + access to a resource this entity rarely/never uses."
+  },
+  {
+    "event_id": "evt_00016430",
+    "entity_id": "service_account_0088",
+    "entity_type": "service_account",
+    "timestamp": "2026-07-24 23:39:54.716192",
+    "risk_score": 15.9152,
+    "predicted_type": "impossible_travel",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 4.537,
+        "raw_value": -0.246,
+        "direction": "increased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": 1.7568,
+        "raw_value": 0.487,
+        "direction": "increased"
+      },
+      {
+        "feature": "resource_novelty",
+        "reason": "access to a resource this entity rarely/never uses",
+        "shap_contribution": 1.6131,
+        "raw_value": -0.542,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-24 22:58:19.382885",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.055235",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:58:20.127991",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 22:59:12.585896",
+        "resource_accessed": "customer_db",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-24 23:39:54.716192",
+        "resource_accessed": "backup_service",
+        "geo_city": "Tokyo",
+        "device_fingerprint": "fp_79abd4e8ad99",
+        "auth_result": "success"
+      }
+    ],
+    "explanation": "Flagged as likely impossible travel due to isolation-forest outlier score (feature-space deviation) + session duration far from this entity's norm + access to a resource this entity rarely/never uses."
+  },
+  {
+    "event_id": "evt_00005886",
+    "entity_id": "user_0062",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 15:03:52.167418",
+    "risk_score": 15.721,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 6.9918,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.647,
+        "raw_value": 0.136,
+        "direction": "increased"
+      },
+      {
+        "feature": "resource_novelty",
+        "reason": "access to a resource this entity rarely/never uses",
+        "shap_contribution": 0.2639,
+        "raw_value": 0.271,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-20 15:03:32.493018",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:47.908044",
+        "resource_accessed": "hr_portal",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:48.524590",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:49.578928",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:52.167418",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + access to a resource this entity rarely/never uses."
+  },
+  {
+    "event_id": "evt_00001262",
+    "entity_id": "user_0031",
+    "entity_type": "user",
+    "timestamp": "2026-06-05 11:55:59.034181",
+    "risk_score": 15.6949,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0198,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6586,
+        "raw_value": 0.113,
+        "direction": "increased"
+      },
+      {
+        "feature": "hour_deviation_z",
+        "reason": "unusual login hour for this entity",
+        "shap_contribution": 0.3066,
+        "raw_value": 0.403,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-05 11:55:31.840059",
+        "resource_accessed": "wiki",
+        "geo_city": "Chicago",
+        "device_fingerprint": "fp_c2e03df1b5d8",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-05 11:55:41.682497",
+        "resource_accessed": "wiki",
+        "geo_city": "Chicago",
+        "device_fingerprint": "fp_ae8fbe3f2f72",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-05 11:55:42.788203",
+        "resource_accessed": "hr_portal",
+        "geo_city": "Chicago",
+        "device_fingerprint": "fp_ae8fbe3f2f72",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-05 11:55:56.683069",
+        "resource_accessed": "hr_portal",
+        "geo_city": "Chicago",
+        "device_fingerprint": "fp_ae8fbe3f2f72",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-05 11:55:59.034181",
+        "resource_accessed": "wiki",
+        "geo_city": "Chicago",
+        "device_fingerprint": "fp_c2e03df1b5d8",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + unusual login hour for this entity."
+  },
+  {
+    "event_id": "evt_00005882",
+    "entity_id": "user_0062",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 15:04:23.210762",
+    "risk_score": 15.6428,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0306,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6352,
+        "raw_value": 0.056,
+        "direction": "increased"
+      },
+      {
+        "feature": "resource_novelty",
+        "reason": "access to a resource this entity rarely/never uses",
+        "shap_contribution": 0.2613,
+        "raw_value": -0.309,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-20 15:03:49.578928",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:52.167418",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:55.622161",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:56.771607",
+        "resource_accessed": "customer_db",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:04:23.210762",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + access to a resource this entity rarely/never uses."
+  },
+  {
+    "event_id": "evt_00005881",
+    "entity_id": "user_0062",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 15:03:56.771607",
+    "risk_score": 15.5111,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0561,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.8225,
+        "raw_value": 0.154,
+        "direction": "increased"
+      },
+      {
+        "feature": "resource_novelty",
+        "reason": "access to a resource this entity rarely/never uses",
+        "shap_contribution": -0.4746,
+        "raw_value": 1.988,
+        "direction": "decreased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-20 15:03:48.524590",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:49.578928",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:52.167418",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:55.622161",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:56.771607",
+        "resource_accessed": "customer_db",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + access to a resource this entity rarely/never uses."
+  },
+  {
+    "event_id": "evt_00006352",
+    "entity_id": "edge_device_0108",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-21 09:36:42.915458",
+    "risk_score": 15.4505,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.5783,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": -1.1208,
+        "raw_value": -0.02,
+        "direction": "decreased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": -1.0238,
+        "raw_value": -0.663,
+        "direction": "decreased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-21 09:35:25.009789",
+        "resource_accessed": "pos_gateway",
+        "geo_city": "New York",
+        "device_fingerprint": "fp_a83eccea979f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-21 09:35:37.339979",
+        "resource_accessed": "iot_hub_telemetry",
+        "geo_city": "New York",
+        "device_fingerprint": "fp_a83eccea979f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-21 09:35:37.964280",
+        "resource_accessed": "pos_gateway",
+        "geo_city": "New York",
+        "device_fingerprint": "fp_a83eccea979f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-21 09:35:43.248302",
+        "resource_accessed": "pos_gateway",
+        "geo_city": "New York",
+        "device_fingerprint": "fp_a83eccea979f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-21 09:36:42.915458",
+        "resource_accessed": "iot_hub_telemetry",
+        "geo_city": "New York",
+        "device_fingerprint": "fp_a83eccea979f",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + session duration far from this entity's norm."
+  },
+  {
+    "event_id": "evt_00014547",
+    "entity_id": "user_0022",
+    "entity_type": "user",
+    "timestamp": "2026-07-18 16:37:45.317301",
+    "risk_score": 15.4127,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.0202,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6517,
+        "raw_value": 0.118,
+        "direction": "increased"
+      },
+      {
+        "feature": "hour_deviation_z",
+        "reason": "unusual login hour for this entity",
+        "shap_contribution": 0.287,
+        "raw_value": 0.26,
+        "direction": "increased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-07-18 16:37:01.000617",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Austin",
+        "device_fingerprint": "fp_df60e1faafea",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-18 16:37:02.072945",
+        "resource_accessed": "crm",
+        "geo_city": "Austin",
+        "device_fingerprint": "fp_df60e1faafea",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-18 16:37:32.616446",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Austin",
+        "device_fingerprint": "fp_df60e1faafea",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-18 16:37:37.511600",
+        "resource_accessed": "shared_drive_eng",
+        "geo_city": "Austin",
+        "device_fingerprint": "fp_df60e1faafea",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-07-18 16:37:45.317301",
+        "resource_accessed": "billing_console",
+        "geo_city": "Austin",
+        "device_fingerprint": "fp_df60e1faafea",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + unusual login hour for this entity."
+  },
+  {
+    "event_id": "evt_00005883",
+    "entity_id": "user_0062",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 15:04:24.670631",
+    "risk_score": 15.3153,
+    "predicted_type": "brute_force",
+    "confidence": 1.0,
+    "top_contributing_features": [
+      {
+        "feature": "auth_fail_burst",
+        "reason": "burst of authentication failures in a short window",
+        "shap_contribution": 7.6797,
+        "raw_value": 9.119,
+        "direction": "increased"
+      },
+      {
+        "feature": "iso_forest_score",
+        "reason": "isolation-forest outlier score (feature-space deviation)",
+        "shap_contribution": 0.6447,
+        "raw_value": 0.114,
+        "direction": "increased"
+      },
+      {
+        "feature": "duration_deviation_z",
+        "reason": "session duration far from this entity's norm",
+        "shap_contribution": -0.4901,
+        "raw_value": -0.882,
+        "direction": "decreased"
+      }
+    ],
+    "entity_history_snippet": [
+      {
+        "timestamp": "2026-06-20 15:03:52.167418",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:55.622161",
+        "resource_accessed": "payroll_admin",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:03:56.771607",
+        "resource_accessed": "customer_db",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:04:23.210762",
+        "resource_accessed": "shared_drive_finance",
+        "geo_city": "London",
+        "device_fingerprint": "fp_fb8c5cf49994",
+        "auth_result": "fail"
+      },
+      {
+        "timestamp": "2026-06-20 15:04:24.670631",
+        "resource_accessed": "code_repo",
+        "geo_city": "London",
+        "device_fingerprint": "fp_bdacafbcfa8f",
+        "auth_result": "fail"
+      }
+    ],
+    "explanation": "Flagged as likely brute force due to burst of authentication failures in a short window + isolation-forest outlier score (feature-space deviation) + session duration far from this entity's norm."
+  }
+]
