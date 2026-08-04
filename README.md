@@ -6,7 +6,7 @@
 
 An explainable, sequence-aware intrusion & insider-threat detection prototype — models "normal" behavior per user, service account, and edge device, detects deviations in near real-time, classifies the attack type, and explains every alert in plain English through a live SOC analyst console.
 
-**SIH Problem Statement:** Question 4A — *AI-Powered Behavioral Anomaly Detection for Cybersecurity*
+*AI-Powered Behavioral Anomaly Detection for Cybersecurity*
 **Theme:** Cybersecurity / Artificial Intelligence & Machine Learning · **Category:** Software
 
 <!-- Add after recording -->
@@ -313,7 +313,6 @@ Feel free to fork the repository and open a Pull Request.
 
 ## Avinash Kumar Singh
 
-Student ID: 23BCY10006
 
 ### Connect with me
 
